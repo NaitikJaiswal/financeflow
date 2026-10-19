@@ -30,7 +30,8 @@ import Sidebar from "../components/Sidebar";
 import SummaryCard from "../components/SummaryCard";
 import SpendingChart from "../components/SpendingChart";
 import AuthGuard from "../components/AuthGuard";
-const API_URL = "http://localhost:8000/api";
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
 
 type Transaction = {
   id: string;
